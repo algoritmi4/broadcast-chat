@@ -33,7 +33,7 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": true,
-    "noUncheckedSideEffectImports": true,
+    "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "vite-env.d.ts"]
 }

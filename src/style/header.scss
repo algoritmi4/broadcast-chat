@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black;
+
+  &__title {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
