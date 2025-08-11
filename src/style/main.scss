@@ -1,13 +1,19 @@
+@use './library' as *;
+
 #app {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $page-bg;
 
   main {
     flex-grow: 1;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

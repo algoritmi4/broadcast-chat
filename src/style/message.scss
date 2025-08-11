@@ -1,0 +1,20 @@
+@use './library' as *;
+$border-radius: 8px;
+$border-from-radius: 3px;
+
+.message {
+  padding: 8px 12px;
+  border-radius: $border-radius;
+  border-bottom-right-radius: $border-from-radius;
+  margin: 10px 0 0;
+  max-width: 40%;
+  background-color: $message-primary;
+  font-size: 20px;
+
+  &__companion {
+    background-color: $message-secondary;
+    align-self: start;
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-from-radius;
+  }
+}
