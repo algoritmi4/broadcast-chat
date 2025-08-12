@@ -18,7 +18,9 @@ const initApp = async (): Promise<void> => {
 
   header!.innerHTML = headerHtml;
 
-  initMessageList(app);
+  await initMessageList(app);
 };
 
-initApp().catch(() => {});
+initApp().catch((e) => {
+  handleError(e);
+});
