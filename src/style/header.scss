@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   border-bottom: 2px solid black;
+  flex: 0 0 auto;
 
   &__title {
     margin-left: 10px;
