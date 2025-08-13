@@ -4,6 +4,7 @@ import { headerHtml } from '../blocks';
 import { initMessageList } from './messageList';
 import { handleError } from '../utils/handleError';
 import { initDataBase } from '../store/indexDb';
+import { inputHtml } from '../blocks';
 
 const initApp = async (): Promise<void> => {
   await initDataBase();
@@ -15,8 +16,10 @@ const initApp = async (): Promise<void> => {
   app.innerHTML = appHtml;
 
   const header = app?.querySelector('.header');
+  const inputBox = app?.querySelector('.chat-input');
 
   header!.innerHTML = headerHtml;
+  inputBox!.innerHTML = inputHtml;
 
   await initMessageList(app);
 };
