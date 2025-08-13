@@ -1,4 +1,4 @@
-import messageHtml from '../blocks/message.html?raw';
+import { messageHtml } from '../blocks';
 import { parseHTML } from '../utils/parseHtml';
 
 export interface Message {

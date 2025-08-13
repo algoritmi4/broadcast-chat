@@ -1,6 +1,6 @@
 import '../style/index.scss';
-import appHtml from '../blocks/app.html?raw';
-import headerHtml from '../blocks/header.html?raw';
+import { appHtml } from '../blocks';
+import { headerHtml } from '../blocks';
 import { initMessageList } from './messageList';
 import { handleError } from '../utils/handleError';
 import { initDataBase } from '../store/indexDb';
