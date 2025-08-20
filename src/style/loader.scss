@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+.loader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+
+  &__spinner {
+    width: 25px;
+    height: 25px;
+    border: 2px solid $text-primary;
+    border-bottom-color: $text-secondary;
+    border-radius: 50%;
+    animation: rotation 1s linear infinite;
+    flex-shrink: 0;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

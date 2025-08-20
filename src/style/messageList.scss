@@ -1,10 +1,20 @@
 .message-list {
   width: 100%;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: flex-end;
   padding: 8px;
-  flex: 1 1 auto;
+  flex: 1;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+
+  &__inner {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
