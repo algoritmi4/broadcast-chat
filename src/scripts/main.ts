@@ -1,10 +1,10 @@
 import '../style/index.scss';
-import { appHtml } from '../blocks';
-import { headerHtml } from '../blocks';
+import { appHtml } from '../components';
+import { headerHtml } from '../components';
 import { initMessageList } from './messageList';
 import { handleError } from '../utils/handleError';
 import { initDataBase } from '../store/indexDb';
-import { inputHtml } from '../blocks';
+import { inputHtml } from '../components';
 
 const initApp = async (): Promise<void> => {
   await initDataBase();

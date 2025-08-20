@@ -1,4 +1,4 @@
-import { messageHtml } from '../blocks';
+import { messageHtml } from '../components';
 import { parseHTML } from '../utils/parseHtml';
 
 export interface Message {
@@ -6,7 +6,7 @@ export interface Message {
   id: number;
 }
 
-export const generateMessage = ({ text, id }: Message): HTMLElement => {
+export const generateMessage = ({ text, id }: Message): Element => {
   const message = parseHTML(messageHtml);
 
   message.textContent = text;

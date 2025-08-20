@@ -1,9 +1,7 @@
-export function parseHTML<T extends HTMLElement = HTMLElement>(
-  html: string,
-): T {
+export function parseHTML(html: string): Element {
   const template = document.createElement('template');
 
   template.innerHTML = html.trim();
 
-  return template.content.firstElementChild as T;
+  return template.content.firstElementChild!;
 }
